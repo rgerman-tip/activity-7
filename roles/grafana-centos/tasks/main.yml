@@ -1,0 +1,16 @@
+---
+# tasks file for grafana-centos
+- name: Add repository for Grafana
+  copy:
+    src: grafana.repo
+    dest: /etc/yum.repo.d/
+
+- name: Update CentOS
+  yum:
+    update_cache: YES
+
+- name: Install Grafana
+  yum:
+    name: grafana
+    state: present
+

@@ -1,0 +1,8 @@
+---
+# tasks file for prometheus-ubuntu
+- name: install Prometheus
+  apt:
+    name:
+      - prometheus
+      - prometheus-node-exporter
+

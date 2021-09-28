@@ -1,0 +1,9 @@
+---
+# tasks file for nagios-ubuntu
+- name: install Nagios
+  apt:
+    name:
+      - nagios4
+      - nagios-plugins-contrib
+      - nagios-nrpe-plugin
+  
